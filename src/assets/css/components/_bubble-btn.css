@@ -10,17 +10,16 @@
   border: 0;
   box-shadow: none;
   border-radius: 50%;
-  color: $bubble-btn-color;
-  fill: $bubble-btn-color;
+  color: var(--bubble-btn-color);
+  fill: var(--bubble-btn-color);
   cursor: pointer;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .15);
   transition: opacity linear .2s;
-
-  &:hover {
-    opacity: .85;
-  }
 }
 
+.qkb-bubble-btn:hover {
+  opacity: .85;
+}
 .qkb-bubble-btn-icon {
   display: block;
   position: absolute;
@@ -30,9 +29,9 @@
   height: auto;
   margin: -11px 0 0 -13px;
   line-height: 1em;
+}
 
-  &.qkb-bubble-btn-icon--close {
-    width: 15px;
-    margin: -7px 0 0 -7px;
-  }
+.qkb-bubble-btn-icon .qkb-bubble-btn-icon--close {
+  width: 15px;
+  margin: -7px 0 0 -7px;
 }

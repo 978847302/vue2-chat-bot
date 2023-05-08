@@ -1,0 +1,18 @@
+:root {
+
+    --white: #fff;
+
+    /* // Bubble Button */
+    --bubble-btn-color: var(--white);
+
+    /* // Board */
+    --board-bg: var(--white);
+
+    --bubble-time-bg: #222;
+    --bubble-time-color: var(--white);
+
+    --action-line: #e6e6e6;
+    --action-input-bg: var(--white);
+    --action-disable-bg: #ccc;
+    --action-icon-color: #666;
+}

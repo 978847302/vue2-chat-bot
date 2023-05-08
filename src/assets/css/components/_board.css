@@ -1,0 +1,19 @@
+.qkb-board {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  width: 376px;
+  height: 80vh;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: var(--board-bg);
+  box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 600px) {
+  .qkb-board {
+    width: 100%;
+  }
+}

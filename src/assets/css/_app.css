@@ -1,0 +1,13 @@
+
+@import '_variables.css';
+
+@import './common/_main.css';
+@import './common/_animation.css';
+
+@import './components/_bubble-btn.css';
+@import './components/_board.css';
+@import './components/_header.css';
+@import './components/_content.css';
+@import './components/_action.css';
+
+

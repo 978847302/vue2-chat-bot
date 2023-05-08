@@ -2,30 +2,28 @@
   position: relative;
   display: flex;
   flex: none;
-  height: $action-height;
+  height: 46px;
   padding: 0.45rem 1.25rem 0.5rem;
-  border-top: 1px solid $action-line;
+  border-top: 1px solid var(--action-line);
 }
 
-.qkb-board-action--disabled {
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .2;
-    cursor: not-allowed;
-  }
+.qkb-board-action--disabled::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .2;
+  cursor: not-allowed;
 }
 
 .qkb-board-action__wrapper {
   display: flex;
   width: 100%;
-  background-color: $action-input-bg;
+  background-color: var(--action-input-bg);
 }
 
 .qkb-board-action__msg-box {
@@ -44,10 +42,10 @@
   box-shadow: none;
   outline: 0;
   color: #000;
+}
 
-  &[disabled="disabled"] {
-    pointer-events: none;
-  }
+.qkb-board-action__input[disabled="disabled"] {
+  pointer-events: none;
 }
 
 .qkb-board-action__disable-text {
@@ -58,7 +56,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: $action-input-bg;
+  background-color: var(--action-input-bg);
   font-size: 0.875rem;
 }
 
@@ -79,23 +77,21 @@
   cursor: pointer;
   opacity: .6;
   transition: opacity linear .1s;
+}
 
-  &:hover {
-    opacity: 1;
-  }
+.qkb-action-item:hover {
+  opacity: 1;
 }
 
 .qkb-action-icon {
   width: 16px;
   height: 16px;
   line-height: 1;
-  fill: $action-icon-color;
-  color: $action-icon-color;
+  fill: var(--action-icon-color);
+  color: var(--action-icon-color);
   vertical-align: middle;
 }
 
-.qkb-board-aciton--typing {
-  .qkb-action-item--send {
-    opacity: 1;
-  }
+.qkb-board-aciton--typing .qkb-action-item--send {
+  opacity: 1;
 }

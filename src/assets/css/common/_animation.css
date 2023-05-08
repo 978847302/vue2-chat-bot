@@ -1,0 +1,47 @@
+.qkb-bot-ui--animate .qkb-fadeUp-enter-active,
+.qkb-bot-ui--animate .qkb-fadeUp-leave-active {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: opacity .15s linear, transform .2s ease-out;
+}
+
+.qkb-bot-ui--animate .qkb-fadeUp-enter,
+.qkb-bot-ui--animate .qkb-fadeUp-leave-to {
+  transform: translate(0, 20px);
+  opacity: 0;
+}
+
+.qkb-bot-ui--animate .qkb-scaleUp-enter-active,
+.qkb-bot-ui--animate .qkb-scaleUp-leave-active {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition: opacity .1s linear, transform .2s ease-out;
+}
+
+.qkb-bot-ui--animate .qkb-scaleUp-enter,
+.qkb-bot-ui--animate .qkb-scaleUp-leave-to {
+  transform: scale(0, 0);
+  opacity: 0;
+}
+
+@keyframes qkbJump {
+  from {
+    transform: translateY(2px);
+  }
+  to {
+    transform: translateY(-1px);
+  }
+}
+
+.qkb-msg-bubble__typing-indicator span, .qkb-msg-bubble__typing-indicator::before, .qkb-msg-bubble__typing-indicator::after {
+  transform: translateY(2px);
+  animation: qkbJump ease 0.35s infinite alternate;
+}
+
+.qkb-msg-bubble__typing-indicator span {
+  animation-delay: 0.175s;
+}
+
+.qkb-msg-bubble__typing-indicator::after {
+  animation-delay: 0.35s;
+}

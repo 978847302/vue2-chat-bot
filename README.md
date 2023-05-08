@@ -220,6 +220,3 @@ Many things...
 - The icons and images from [FlatIcon](https://www.flaticon.com/)
 - Placeholder image from [Placehold.it](http://placehold.it)
 - Time ago from [date-fns](https://date-fns.org/)
-
-
-**Thank you!** :tada:
